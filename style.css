@@ -1,0 +1,181 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f3ef;
+    color: #171717;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 85px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+    .logo span {
+        color: #a17b51;
+    }
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+    nav a {
+        text-decoration: none;
+        color: #171717;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+        nav a:hover {
+            color: #a17b51;
+        }
+
+.shop-button {
+    background: #171717;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* HERO */
+
+
+
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background-color: #111;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url("./mateo-bg.avif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+        
+
+
+.hero-content {
+    max-width: 600px;
+}
+
+.subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    color: white;
+}
+
+
+.hero .description {
+    color: #cccccc;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #171717;
+    color: white;
+    padding: 18px 28px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .hero-button:hover {
+        background: #a17b51;
+    }
+
+/* COLLECTION */
+
+.collection {
+    text-align: center;
+    padding: 100px 20px;
+    background: white;
+}
+
+    .collection p:first-child {
+        color: #a17b51;
+        letter-spacing: 4px;
+        font-size: 12px;
+    }
+
+    .collection h2 {
+        font-size: 35px;
+        margin: 20px 0;
+    }
+
+/* FOOTER */
+
+footer {
+    background: #171717;
+    color: white;
+    text-align: center;
+    padding: 45px;
+}
+
+    footer h2 {
+        margin-bottom: 15px;
+    }
+
+    footer p {
+        color: #aaa;
+        font-size: 12px;
+    }
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .shop-button {
+        display: none;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 50px 7%;
+        background-position: 60% center;
+    }
+
+        .hero h1 {
+            letter-spacing: -3px;
+        }
+}
